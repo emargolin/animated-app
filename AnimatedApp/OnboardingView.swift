@@ -21,6 +21,12 @@ struct OnboardingView: View {
                         .ignoresSafeArea()
                         .blur(radius: 2)
                 )
+            VStack (spacing: 10) {
+                Spacer()
+                RiveViewModel(fileName: "goldfishbounce").view()
+                    .position(x: 180, y: 450)
+            }
+            .padding()
             
             button.view()
                 .frame(width: 236, height: 64)
